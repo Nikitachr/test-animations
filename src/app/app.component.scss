@@ -1,0 +1,34 @@
+:host {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: block;
+  position: fixed;
+  animation: slideOut 1s ease-in-out;
+  animation-delay: 4s;
+}
+
+rect {
+  animation: fill 4s ease-in-out;
+}
+
+@keyframes fill {
+  from {
+    transform: translateY(100%);
+  }
+  to  {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideOut {
+  to  {
+    transform: translate(-55vw, -55vh);
+  }
+}
